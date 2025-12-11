@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="cabecalho">
+        <header>
+            <h2> minha lista de tarefas </h2>
+        </header>
+    </div>
+    <main>
+        <form class="tarefa">
+           <label for="task">
+            adicionar nova tarefa:
+           </label>
+           <input type="text" id="task" nome="task" placeholder="digite sua tarefa">
+           <button type="button" id="adicionar-uma-nova-tarefa">adicionar uma nova tarefa</button>
+        </form>
+        <br>
+        <div id="adicionar-filtro">
+           <button id="todas as tarefas">todas as tarefas</button>
+           <button id="tarefas concluidas">tarefas concluidas</button>
+           <button id="tarefas pendentes">tarefas pendentes</button>
+        </div>
+         <div class="lista">
+        <h4>
+            lista de tarefas:
+        </h4>
+        <ul id="lista"></ul>
+        </div>
+    </main>
+    <div class="button">
+        <div class="">
+            <button id="editar">editar</button>
+            <button id="excluir">excluir</button>
+    </div>
+    <footer>
+        <div class="semifinal">
+        <p id="task-counter"><span id="counter">0</span> tarefas concluidas</p>
+        </div>
+        <div class="final">
+            <p id="task-counter"><span id="counter">0</span> tarefas pendentes</p>
+        </div>
+    </footer>
+</body>
+<script src="scripti.js"></script>
+</html>
